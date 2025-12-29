@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(180deg, #1db954, #121212);
-      color: #fff;
+      color: white;
+      min-height: 100vh;
     }
 
     .container {
@@ -19,26 +24,22 @@
       padding: 20px;
     }
 
-    .header {
+    h1 {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 5px;
     }
 
-    .header h1 {
-      margin: 10px 0 5px;
-      font-size: 26px;
-    }
-
-    .header p {
-      margin: 0;
-      color: #ccc;
+    .subtitle {
+      text-align: center;
+      color: #ddd;
+      font-size: 14px;
+      margin-bottom: 20px;
     }
 
     .card {
       background: #181818;
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     }
 
     .play {
@@ -46,17 +47,15 @@
       height: 60px;
       background: #1db954;
       border-radius: 50%;
+      margin: 0 auto 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 20px;
-      cursor: pointer;
       animation: pulse 1.5s infinite;
     }
 
-    .play::before {
-      content: "▶";
-      color: #000;
+    .play span {
+      color: black;
       font-size: 24px;
       margin-left: 4px;
     }
@@ -67,15 +66,11 @@
       100% { box-shadow: 0 0 0 0 rgba(29,185,84,0); }
     }
 
-    .romantic {
+    .text {
       text-align: center;
-      font-size: 15px;
-      color: #ddd;
+      font-size: 14px;
+      color: #ccc;
       margin-bottom: 20px;
-    }
-
-    .playlist {
-      margin-top: 10px;
     }
 
     .music {
@@ -86,77 +81,12 @@
       font-size: 14px;
     }
 
-    .music span {
+    .artist {
       color: #aaa;
     }
 
     .spotify {
-      display: block;
       margin-top: 20px;
+      display: block;
       text-align: center;
-      background: #1db954;
-      color: #000;
-      padding: 12px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #aaa;
-      margin-top: 25px;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-    
-    <div class="header">
-      <h1>Nossa Playlist 💚</h1>
-      <p>César & Beatriz</p>
-      <p>Desde 28/12/2024</p>
-    </div>
-
-    <div class="card">
-
-      <div class="play"></div>
-
-      <div class="romantic">
-        Essa playlist não é só música.<br>
-        É nossa história, nossos momentos<br>
-        e tudo o que eu sinto por você 💚
-      </div>
-
-      <div class="playlist">
-        <div class="music">
-          <div>1. Tudo o que você quiser</div>
-          <span>Luan Santana</span>
-        </div>
-        <div class="music">
-          <div>2. Te Vivo</div>
-          <span>Luan Santana</span>
-        </div>
-        <div class="music">
-          <div>3. Can't Help Falling in Love</div>
-          <span>Elvis Presley</span>
-        </div>
-      </div>
-
-      <a class="spotify" href="https://open.spotify.com" target="_blank">
-        Abrir no Spotify
-      </a>
-
-    </div>
-
-    <footer>
-      Feito com amor 💚
-    </footer>
-
-  </div>
-
-</body>
-</html>
+      background: #
